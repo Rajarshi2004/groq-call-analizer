@@ -56,7 +56,8 @@ if st.button("Analyze"):
             writer.writerow([transcript, summary, sentiment])
 
         st.success(f"Saved to {CSV_FILE}")
-        st.subheader("📂 Download your saved conversations")
+        st.subheader("📂 your saved conversations")
         df=pd.read_csv(CSV_FILE)
         st.dataframe(df)  
         
+
